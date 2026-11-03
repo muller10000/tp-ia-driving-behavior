@@ -1,0 +1,15 @@
+# Entornos
+.venv/
+__pycache__/
+*.pyc
+
+# Datos y modelos pesados
+data/
+models/
+*.pkl
+*.pth
+*.h5
+
+# Jupyter y VS Code
+.ipynb_checkpoints/
+.vscode/
