@@ -15,7 +15,7 @@ El desarrollo metodológico y conceptual del trabajo se encuentra documentado en
 - Evaluación de resultados mediante métricas de rendimiento.
 - Comparación y análisis de los enfoques utilizados.
 
-**[Consultar Informe Técnico (PDF)](./docs/Informe_Tecnico_Muller.pdf)**
+**[Consultar Informe Técnico (PDF)](https://docs.google.com/document/d/1MSQDHfrcVBnrKFs9MQIaTvUiNR64hu6ZyvKkZoog6OU/edit?usp=sharing)**
 
 ## Reproducibilidad y ejecución
 
@@ -68,21 +68,23 @@ El primer conjunto de datos se obtiene desde Kaggle:
 - **Descarga:** mediante `kagglehub` o descarga manual desde la plataforma.
 - **Ubicación esperada:** `data/raw/dataset_kaggle/`
 
-Para la descarga automática, es necesario configurar previamente las credenciales de Kaggle. El procedimiento correspondiente se encuentra documentado en el notebook de preparación inicial.
+Para la descarga automática, es necesario configurar previamente las credenciales de Kaggle. Tuve que
+crear una cuenta en la pagina adjunta y dirigirme a "Your Api Tokens" para crear my Legacy Api Key.
+Por ultimo movi el archivo descargado a la carpeta llamada Kaggle que cree en la raiz. Luego, simplemente
+ejecute el script dentro de 1_exploracion_datos.ipynb
 
-Como alternativa, se puede descargar el dataset manualmente y extraer su contenido en la carpeta indicada.
-
+Como alternativa, se puede descargar el dataset manualmente (zip) y extraer su contenido en la carpeta indicada.
 2) Dataset 2: Driver Behavior Dataset (GitHub)
 
 El segundo conjunto de datos también corresponde a un *Driver Behavior Dataset*, pero se obtiene desde un repositorio de GitHub.
 
-- **Fuente:** [Driver Behavior Dataset – GitHub](URL_DEL_REPOSITORIO)
+- **Fuente:** [Driver Behavior Dataset – GitHub]
 - **Descarga:** mediante clonación del repositorio o descarga de sus archivos.
 - **Ubicación esperada:** `data/raw/dataset_github/`
 
 Para obtenerlo mediante Git:
 
-git clone https://github.com/jair-jr/driverBehaviorDataset.git data/raw/dataset_github
+git clone <https://github.com/jair-jr/driverBehaviorDataset.git> data/raw/dataset_github
 
 También es posible descargar los archivos directamente desde GitHub y ubicarlos en la carpeta correspondiente.
 
@@ -90,4 +92,4 @@ También es posible descargar los archivos directamente desde GitHub y ubicarlos
 
 Ambos datasets se mantienen separados dentro de `data/raw/` para preservar su procedencia y permitir su procesamiento y evaluación de manera independiente.
 
-Los notebooks del proyecto documentan las tareas de exploración, preparación y preprocesamiento necesarias para trabajar con cada conjunto de datos.
+Los notebooks del proyecto documentan las tareas de exploración, preparación y preprocesamiento necesarias para trabajar con cada conjunto de datos
